@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<rect x="0" y="0" width="390" height="844" rx="0" fill="#F6F5F0"/>
+<text x="24" y="26.479999999999997" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#183C32">9:41</text>
+<text x="304" y="26.479999999999997" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#183C32">•••  ▰</text>
+<rect x="128" y="824" width="134" height="5" rx="3" fill="#183C32"/>
+<text x="24" y="73.84" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#1F5C46">TRAIL NOTES</text>
+<text x="24" y="115.24" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600" fill="#183C32">Чуть ближе</text>
+<text x="24" y="154.24" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600" fill="#183C32">к природе.</text>
+<text x="24" y="188.48" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#68776F">Идеи для небольшого приключения</text>
+<rect x="24" y="213" width="342" height="65" rx="14" fill="#F8E8D3"/>
+<text x="39" y="237.48" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#183C32">Нет соединения</text>
+<text x="39" y="257.02" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#68776F">Сохранено сегодня в 09:41  ·  Обновить</text>
+<rect x="24" y="302" width="342" height="168" rx="24" fill="#DCE8D5"/>
+<rect x="41" y="318" width="106" height="26" rx="13" fill="#F6F5F0"/>
+<text x="53" y="331.2" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#183C32">МАРШРУТЫ</text>
+<path d="M 24 443 Q 105 352 198 427 Q 275 463 366 375 L 366 470 L 24 470 Z" fill="#B7CBA8" stroke="none" stroke-width="2" stroke-linecap="round"/>
+<path d="M 157 470 C 256 406 102 429 257 374" fill="none" stroke="#F6F5F0" stroke-width="12" stroke-linecap="round"/>
+<ellipse cx="307.5" cy="345.5" rx="17.5" ry="17.5" fill="#EDAA68"/>
+<path d="M 310 441 L 310 396 M 297 418 L 310 398 L 323 418" fill="none" stroke="#1F5C46" stroke-width="3" stroke-linecap="round"/>
+<text x="24" y="507.68" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#183C32">Первый маршрут</text>
+<text x="24" y="537.68" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#183C32">без спешки</text>
+<text x="24" y="568.48" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#68776F">Как выбрать прогулку, после которой</text>
+<text x="24" y="589.48" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#68776F">захочется вернуться.</text>
+<text x="24" y="620.84" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#68776F">5 мин чтения</text>
+<text x="272" y="620.48" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#1F5C46">Читать  →</text>
+<rect x="24" y="651" width="342" height="1" rx="0" fill="#E1E5DC"/>
+<text x="24" y="690.4" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#183C32">Ещё для вас</text>
+<rect x="24" y="715" width="64" height="64" rx="16" fill="#E9DECD"/>
+<path d="M 43 757 L 56 737 L 69 757 Z" fill="none" stroke="#1F5C46" stroke-width="2" stroke-linecap="round"/>
+<text x="104" y="736.12" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#183C32">Что взять с собой</text>
+<text x="104" y="758.2" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="#68776F">СНАРЯЖЕНИЕ · 4 МИН</text>
+<text x="346" y="754.68" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#1F5C46">›</text>
+</svg>

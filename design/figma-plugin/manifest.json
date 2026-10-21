@@ -1,0 +1,14 @@
+{
+  "name": "Trail Notes \u2014 Workshop Redesign",
+  "id": "trail-notes-workshop-local",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma"
+  ],
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}
