@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Trail Notes",
+    "slug": "trail-notes-workshop",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.workshop.trailnotes.rn",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        },
+        "NSLocalNetworkUsageDescription": "Connect to the local workshop API."
+      }
+    },
+    "android": {
+      "package": "com.workshop.trailnotes.rn"
+    },
+    "plugins": []
+  }
+}

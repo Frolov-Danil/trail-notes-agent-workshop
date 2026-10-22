@@ -1,6 +1,14 @@
+node_modules/
+.expo/
+dist/
+web-build/
+ios/
+android/
 build/
 DerivedData/
 *.xcuserstate
 xcuserdata/
 .DS_Store
 __pycache__/
+.env
+.env.local

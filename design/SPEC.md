@@ -3,9 +3,9 @@
 Mobile viewport: 390 × 844 points. Light theme. Scroll content below viewport.
 Colors: background #F6F5F0; ink #183C32; secondary #68776F; accent #1F5C46;
 separator #E1E5DC; offline surface #F8E8D3. White on green for primary action.
-Typography: reference uses Inter; iOS implementation can use native SF Pro.
+Typography: reference uses Inter; React Native can use native system fonts on iOS and Android.
 Display 32 semibold; featured title 24 semibold; section 20–22 semibold;
-body 15–16 regular, line height 25; metadata 10–12. Respect Dynamic Type.
+body 15–16 regular, line height 25; metadata 10–12. Respect system font scaling on both platforms.
 Horizontal gutter 24; spacing 8/16/24/32; large cover radius 24; small cards 16.
 Tap targets at least 44 × 44; decorative illustrations hidden from accessibility.
 

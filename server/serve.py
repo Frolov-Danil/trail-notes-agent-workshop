@@ -7,11 +7,13 @@ import argparse
 class Handler(SimpleHTTPRequestHandler):
     def end_headers(self):
         self.send_header("Cache-Control", "no-store")
+        self.send_header("Access-Control-Allow-Origin", "*")
         super().end_headers()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--host", default="127.0.0.1", help="Use 0.0.0.0 for a physical phone on your LAN")
     args = parser.parse_args()
-    print(f"Trail Notes API: http://127.0.0.1:{args.port}/articles.json", flush=True)
-    ThreadingHTTPServer(("127.0.0.1", args.port), partial(Handler, directory=str(Path(__file__).parent))).serve_forever()
+    print(f"Trail Notes API: http://{args.host}:{args.port}/articles.json", flush=True)
+    ThreadingHTTPServer((args.host, args.port), partial(Handler, directory=str(Path(__file__).parent))).serve_forever()
