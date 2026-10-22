@@ -3,7 +3,7 @@
 Навчальний React Native + Expo SDK 57 + TypeScript проєкт на два екрани:
 бібліотека матеріалів і стаття. Редизайн та постійний кеш залишені як завдання.
 
-Приватний GitHub: https://github.com/Frolov-Danil/trail-notes-agent-workshop
+Публічний GitHub: https://github.com/Frolov-Danil/trail-notes-agent-workshop
 
 **Повний план для ведучого й учасника:** [workshop/FULL-PLAN.md](workshop/FULL-PLAN.md).
 Старт заняття — тег `workshop-v1`. Попередні теги збережено як історію підготовки.
@@ -17,7 +17,7 @@ Node.js 22.13.0 (`.nvmrc`), npm, Python 3, Git.
 Ключі API та обліковий запис Expo для цієї вправи не потрібні.
 
 ```sh
-git clone git@github.com:Frolov-Danil/trail-notes-agent-workshop.git
+git clone https://github.com/Frolov-Danil/trail-notes-agent-workshop.git
 cd trail-notes-agent-workshop
 npm ci
 npm run api
