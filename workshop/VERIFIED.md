@@ -14,8 +14,10 @@
 - Веб-preview включён в зависимости; отдельная runtime-проверка не выполнялась.
 - Нативные Xcode/Gradle development builds не собирались; использован Expo Go.
 - npm audit: 15 high в цепочках Expo CLI/Metro; подробности в DEPENDENCIES.md.
-- Figma remote MCP настроен, CLI подтвердил Successful login. Callback открыт
-  в Chrome-профиле Danil с корпоративной Figma. Новые MCP-инструменты в текущем
-  чате ещё не доступны, whoami и создание Figma-файла пока не выполнялись.
+- Figma MCP whoami: Natife Design (корпоративный аккаунт), Full seat в Pro-команде.
+- Создан Design-файл kiWvehy7xeKj7qoiu0eD8K: 4 редактируемых состояния;
+  Auto Layout, текст Inter, экземпляры компонентов, векторы, без UI-растра.
+- Общая композиция визуально проверена; чтение библиотеки через get_metadata прошло.
+- Точные ссылки и nodeId: design/figma-links.json.
 - Исходная SwiftUI-версия доступна по старому тегу workshop-start;
   её скриншоты отделены в history-swiftui и не относятся к текущим проверкам.

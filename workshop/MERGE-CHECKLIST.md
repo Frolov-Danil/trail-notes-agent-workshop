@@ -1,7 +1,7 @@
 # Объединение
 
 1. Убедиться, что оба агента закоммитили изменения и рабочие деревья чистые.
-2. В основном клоне создать ветку integration/session-01 от workshop-react-native-start.
+2. В основном клоне создать ветку integration/session-01 от workshop-ready.
 3. Выполнить git merge --no-ff exercise/redesign, затем exercise/offline.
 4. При конфликте попросить агента прочитать обе версии и сохранить оба поведения.
 5. Выполнить npm ci, typecheck, тесты и Expo export для обеих платформ. Проверить два экрана онлайн на iOS и Android.

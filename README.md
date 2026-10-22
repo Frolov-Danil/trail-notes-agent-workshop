@@ -50,12 +50,13 @@ python3 server/serve.py --host 0.0.0.0
 
 ## Два worktree
 
-React Native baseline: `workshop-react-native-start`.
+Готовый baseline с макетами Figma: `workshop-ready`.
+Предыдущий baseline React Native: `workshop-react-native-start`.
 Старый тег `workshop-start` сохранён как история исходной SwiftUI-версии.
 
 ```sh
-git worktree add ../TrailNotes-redesign -b exercise/redesign workshop-react-native-start
-git worktree add ../TrailNotes-offline -b exercise/offline workshop-react-native-start
+git worktree add ../TrailNotes-redesign -b exercise/redesign workshop-ready
+git worktree add ../TrailNotes-offline -b exercise/offline workshop-ready
 ```
 
 В каждом worktree выполнить `npm ci`. Открыть каждый в отдельном чате агента
@@ -94,3 +95,5 @@ npx expo export --platform ios --platform android --output-dir dist
 
 Если на macOS `--localhost` привязал Metro к IPv6, а Expo Go обращается к 127.0.0.1:
 `NODE_OPTIONS=--dns-result-order=ipv4first npx expo start --localhost`.
+
+[Редактируемые макеты в Figma](https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-2). Ссылки на отдельные экраны уже включены в задания.

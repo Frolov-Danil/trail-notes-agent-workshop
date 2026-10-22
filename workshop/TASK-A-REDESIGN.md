@@ -20,3 +20,8 @@ useLibrary.ts согласовывать со вторым агентом, не 
 
 Проверка: npm run typecheck, npm test, Expo export для iOS и Android;
 визуальная проверка на обеих платформах. Веб-превью само по себе недостаточно.
+
+## Figma для этого упражнения
+
+- [Библиотека](https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-35)
+- [Статья](https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-92)

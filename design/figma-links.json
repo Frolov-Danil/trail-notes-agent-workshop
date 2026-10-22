@@ -1,0 +1,28 @@
+{
+  "fileKey": "kiWvehy7xeKj7qoiu0eD8K",
+  "fileUrl": "https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop",
+  "overviewUrl": "https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-2",
+  "team": "Natife Design's team",
+  "frames": [
+    {
+      "name": "01 Library · Online",
+      "nodeId": "2:35",
+      "url": "https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-35"
+    },
+    {
+      "name": "02 Article · Online",
+      "nodeId": "2:92",
+      "url": "https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-92"
+    },
+    {
+      "name": "03 Library · Offline cached",
+      "nodeId": "2:126",
+      "url": "https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-126"
+    },
+    {
+      "name": "04 Library · Offline empty",
+      "nodeId": "2:187",
+      "url": "https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-187"
+    }
+  ]
+}

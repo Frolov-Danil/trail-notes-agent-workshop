@@ -26,3 +26,8 @@ AsyncStorage через npx expo install. localStorage не подходит д�
 Схема кеша должна иметь версию. Для сценария «нет кеша» очищай только ключи
 Trail Notes — не весь Expo Go и не данные других учебных приложений.
 Проверь обе платформы. Metro оставляй включённым при остановке Python API.
+
+## Figma: состояния без сети
+
+- [С сохранёнными данными](https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-126)
+- [Без кеша](https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-187)
