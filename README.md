@@ -1,84 +1,77 @@
 # Trail Notes · Agent Workshop
 
-React Native + Expo SDK 57 + TypeScript. Два экрана: библиотека и статья.
-iOS, Android и веб-превью используют общий код. Редизайн и постоянный кеш
-намеренно НЕ реализованы: это задания для двух агентов.
+Навчальний React Native + Expo SDK 57 + TypeScript проєкт на два екрани:
+бібліотека матеріалів і стаття. Редизайн та постійний кеш залишені як завдання.
 
-## Что установить
+Приватний GitHub: https://github.com/Frolov-Danil/trail-notes-agent-workshop
 
-Node.js 22.13+ (проверено на 22.13), npm, Python 3.
-Для iOS Simulator — macOS, Xcode и установленный Simulator.
-Для Android Emulator — Android Studio с созданным и запущенным эмулятором.
-Приложение запускается через совместимый Expo Go (SDK 57), без аккаунта Expo,
-облачной сборки и API-ключей. При несовместимости Expo Go используйте версию
-SDK 57 с https://expo.dev/go либо development build по документации Expo.
+**Повний план для ведучого й учасника:** [workshop/FULL-PLAN.md](workshop/FULL-PLAN.md).
+Старт заняття — тег `workshop-v1`. Попередні теги збережено як історію підготовки.
 
-## Быстрый запуск
+## Підготовка
+
+Node.js 22.13.0 (`.nvmrc`), npm, Python 3, Git.
+Для iOS — macOS, Xcode та iOS Simulator; для Android — Android Studio з емулятором.
+Основну перевірку учасник виконує на знайомій платформі.
+Запуск через Expo Go для SDK 57: https://expo.dev/go.
+Ключі API та обліковий запис Expo для цієї вправи не потрібні.
 
 ```sh
+git clone git@github.com:Frolov-Danil/trail-notes-agent-workshop.git
+cd trail-notes-agent-workshop
 npm ci
 npm run api
 ```
 
-В другом терминале из этой папки:
+В іншому терміналі з кореня проєкту:
 
 ```sh
 npm start
 ```
 
-В терминале Expo: `i` — iOS Simulator, `a` — Android Emulator,
-`w` — браузерное превью. Для оценки мобильного интерфейса используйте Simulator
-или Emulator. Кнопка «Обновить» и pull-to-refresh повторяют запрос.
+У терміналі Expo: `i` — iOS Simulator, `a` — Android Emulator, `w` — вебперегляд.
+Мобільну поведінку перевіряти у симуляторі/емуляторі.
 
-## Локальный API
+## Локальний API
 
-Python-сервер отдаёт четыре материала с полным текстом, Cache-Control: no-store.
-По умолчанию: iOS/web → http://127.0.0.1:8765; Android Emulator → http://10.0.2.2:8765.
-Остановите Python через Ctrl+C и нажмите «Обновить»: появится ошибка.
-Запустите сервер и нажмите «Повторить»: данные загрузятся снова.
+Python віддає чотири матеріали з повним текстом і `Cache-Control: no-store`.
+Адреса вибирається автоматично: iOS/web → `127.0.0.1:8765`, Android Emulator → `10.0.2.2:8765`.
+Для перевірки відсутності мережі зупинити Python через Ctrl+C, залишивши Metro
+ввімкненим. У застосунку натиснути «Обновить», потім після запуску API — «Повторить».
+Назви кнопок відповідають поточному стартовому інтерфейсу.
 
-Физический телефон: скопируйте `.env.example` в `.env`, задайте
-`EXPO_PUBLIC_API_URL=http://<LAN-IP-компьютера>:8765`, перезапустите Metro и API:
+Для фізичного телефона скопіювати `.env.example` в `.env`, задати
+`EXPO_PUBLIC_API_URL=http://<LAN-IP-комп’ютера>:8765` та перезапустити Metro.
+API запустити командою `python3 server/serve.py --host 0.0.0.0`.
+Телефон і комп’ютер мають бути в одній мережі. За замовчуванням API доступний
+лише через loopback; для першої вправи рекомендуємо симулятор/емулятор.
+
+## Дві паралельні задачі
+
+У свіжому локальному клоні:
 
 ```sh
-python3 server/serve.py --host 0.0.0.0
+git worktree add ../trailnotes-redesign
+git worktree add ../trailnotes-offline
 ```
 
-Телефон и компьютер должны быть в одной сети. Сервер не содержит закрытых
-данных и привязан к loopback по умолчанию. Для задания без сети останавливайте
-именно API, оставляя Metro включённым: Expo Go получает JS от Metro.
+Git автоматично створить локальні гілки; персональні назви не потрібні.
+У кожному worktree виконати `npm ci`, відкрити окремий чат агента й передати
+[задачу A](workshop/TASK-A-REDESIGN.md) або [задачу B](workshop/TASK-B-OFFLINE.md).
+Зміни й результат об’єднання залишаються локально, без push або PR.
 
-## Два worktree
-
-Готовый baseline с макетами Figma: `workshop-ready`.
-Предыдущий baseline React Native: `workshop-react-native-start`.
-Старый тег `workshop-start` сохранён как история исходной SwiftUI-версии.
+Metro: порт 8081 для редизайну, 8082 для офлайн-версії, 8083 для об’єднаного результату:
 
 ```sh
-git worktree add ../TrailNotes-redesign -b exercise/redesign workshop-ready
-git worktree add ../TrailNotes-offline -b exercise/offline workshop-ready
-```
-
-В каждом worktree выполнить `npm ci`. Открыть каждый в отдельном чате агента
-и передать соответственно `workshop/TASK-A-REDESIGN.md` и `workshop/TASK-B-OFFLINE.md`.
-Для редизайна передать ссылки на Frame 01 и 02 в Figma и проверить их чтение через MCP.
-
-Metro каждого worktree должен иметь свой порт:
-
-```sh
-# worktree redesign
 npx expo start --port 8081
-# worktree offline
-npx expo start --port 8082
 ```
 
-Оба могут использовать API основного клона на 8765. Если нужно независимое
-отключение серверов, запустите API ветки B на 8766 и задайте EXPO_PUBLIC_API_URL
-в её `.env` с подходящим хостом платформы. Для одновременной визуальной проверки
-используйте разные устройства/эмуляторы, открывая нужный URL Metro в Expo Go.
-Для каждого участника — свежий клон, свои ветки и порты.
+Замінити порт відповідно до робочої папки. Один API з основного клону можна
+використовувати для обох версій. Для незалежної перевірки B — окремий API на
+8766 та EXPO_PUBLIC_API_URL у її `.env` з правильною адресою платформи.
+Worktree ізолює файли, але не сервери, порти й дані симулятора.
 
-## Проверки
+## Перевірки
 
 ```sh
 npm run typecheck
@@ -87,13 +80,14 @@ npx expo install --check
 npx expo export --platform ios --platform android --output-dir dist
 ```
 
-Экспорт проверяет bundling, но не заменяет запуск на iOS/Android.
-Фактически выполненные проверки: workshop/VERIFIED.md.
-Замечания npm audit к транзитивным зависимостям Expo/Metro: workshop/DEPENDENCIES.md.
-Сценарий встречи: workshop/BRIEF.md. Слияние: workshop/MERGE-CHECKLIST.md.
-Макеты и статус Figma: design/README.md.
+Експорт перевіряє bundling, але не замінює запуск на пристрої.
+[Виконані перевірки](workshop/VERIFIED.md) · [Обмеження залежностей](workshop/DEPENDENCIES.md).
 
-Если на macOS `--localhost` привязал Metro к IPv6, а Expo Go обращается к 127.0.0.1:
+Якщо macOS прив’язала Metro до IPv6, а Expo Go звертається до 127.0.0.1:
 `NODE_OPTIONS=--dns-result-order=ipv4first npx expo start --localhost`.
 
-[Редактируемые макеты в Figma](https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-2). Ссылки на отдельные экраны уже включены в задания.
+## Макети
+
+[Редаговані екрани Figma](https://www.figma.com/design/kiWvehy7xeKj7qoiu0eD8K/Trail-Notes-AI-Agent-Workshop?node-id=2-2).
+Посилання на окремі вузли вже додано до завдань.
+[Опис і структура макетів](design/README.md) · [Вимоги до оформлення](design/SPEC.md).
